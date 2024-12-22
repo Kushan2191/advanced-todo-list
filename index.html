@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Todo App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1> Todo List</h1>
+            <button id="theme-toggle">Toggle Theme</button>
+        </header>
+
+        <section class="task-input">
+            <input type="text" id="task-name" placeholder="Enter task name">
+            <input type="date" id="task-due-date">
+            <select id="task-priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </section>
+
+        <section class="task-controls">
+            <input type="text" id="search-bar" placeholder="Search tasks...">
+            <select id="sort-tasks">
+                <option value="date">Sort by Due Date</option>
+                <option value="priority">Sort by Priority</option>
+                <option value="name">Sort by Name</option>
+            </select>
+        </section>
+
+        <section class="task-list" id="task-list">
+    
+        </section>
+
+        <footer>
+            <div id="progress-container">
+                <p>Progress:</p>
+                <progress id="progress-bar" value="0" max="100"></progress>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
